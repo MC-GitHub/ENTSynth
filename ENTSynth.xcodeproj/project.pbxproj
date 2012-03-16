@@ -1,0 +1,460 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FF622DE81513471A0080ADD7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF622DE71513471A0080ADD7 /* UIKit.framework */; };
+		FF622DEA1513471A0080ADD7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF622DE91513471A0080ADD7 /* Foundation.framework */; };
+		FF622DEC1513471A0080ADD7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF622DEB1513471A0080ADD7 /* CoreGraphics.framework */; };
+		FF622DF21513471A0080ADD7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FF622DF01513471A0080ADD7 /* InfoPlist.strings */; };
+		FF622DF41513471A0080ADD7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF622DF31513471A0080ADD7 /* main.m */; };
+		FF622DF81513471A0080ADD7 /* ENTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF622DF71513471A0080ADD7 /* ENTAppDelegate.m */; };
+		FF622DFB1513471A0080ADD7 /* ENTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF622DFA1513471A0080ADD7 /* ENTViewController.m */; };
+		FF622DFE1513471A0080ADD7 /* ENTViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF622DFC1513471A0080ADD7 /* ENTViewController_iPhone.xib */; };
+		FF622E011513471A0080ADD7 /* ENTViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF622DFF1513471A0080ADD7 /* ENTViewController_iPad.xib */; };
+		FF622E091513471A0080ADD7 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF622E081513471A0080ADD7 /* SenTestingKit.framework */; };
+		FF622E0A1513471A0080ADD7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF622DE71513471A0080ADD7 /* UIKit.framework */; };
+		FF622E0B1513471A0080ADD7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF622DE91513471A0080ADD7 /* Foundation.framework */; };
+		FF622E131513471A0080ADD7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FF622E111513471A0080ADD7 /* InfoPlist.strings */; };
+		FF622E161513471A0080ADD7 /* ENTSynthTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF622E151513471A0080ADD7 /* ENTSynthTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FF622E0C1513471A0080ADD7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF622DDA151347190080ADD7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF622DE21513471A0080ADD7;
+			remoteInfo = ENTSynth;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FF622DE31513471A0080ADD7 /* ENTSynth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ENTSynth.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF622DE71513471A0080ADD7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FF622DE91513471A0080ADD7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FF622DEB1513471A0080ADD7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FF622DEF1513471A0080ADD7 /* ENTSynth-Info.plist */ = {isa = PBXFileReference; path = "ENTSynth-Info.plist"; sourceTree = "<group>"; };
+		FF622DF11513471A0080ADD7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FF622DF31513471A0080ADD7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FF622DF51513471A0080ADD7 /* ENTSynth-Prefix.pch */ = {isa = PBXFileReference; path = "ENTSynth-Prefix.pch"; sourceTree = "<group>"; };
+		FF622DF61513471A0080ADD7 /* ENTAppDelegate.h */ = {isa = PBXFileReference; path = ENTAppDelegate.h; sourceTree = "<group>"; };
+		FF622DF71513471A0080ADD7 /* ENTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ENTAppDelegate.m; sourceTree = "<group>"; };
+		FF622DF91513471A0080ADD7 /* ENTViewController.h */ = {isa = PBXFileReference; path = ENTViewController.h; sourceTree = "<group>"; };
+		FF622DFA1513471A0080ADD7 /* ENTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ENTViewController.m; sourceTree = "<group>"; };
+		FF622DFD1513471A0080ADD7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ENTViewController_iPhone.xib; sourceTree = "<group>"; };
+		FF622E001513471A0080ADD7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ENTViewController_iPad.xib; sourceTree = "<group>"; };
+		FF622E071513471A0080ADD7 /* ENTSynthTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ENTSynthTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF622E081513471A0080ADD7 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		FF622E101513471A0080ADD7 /* ENTSynthTests-Info.plist */ = {isa = PBXFileReference; path = "ENTSynthTests-Info.plist"; sourceTree = "<group>"; };
+		FF622E121513471A0080ADD7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FF622E141513471A0080ADD7 /* ENTSynthTests.h */ = {isa = PBXFileReference; path = ENTSynthTests.h; sourceTree = "<group>"; };
+		FF622E151513471A0080ADD7 /* ENTSynthTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ENTSynthTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF622DE01513471A0080ADD7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF622DE81513471A0080ADD7 /* UIKit.framework in Frameworks */,
+				FF622DEA1513471A0080ADD7 /* Foundation.framework in Frameworks */,
+				FF622DEC1513471A0080ADD7 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF622E031513471A0080ADD7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF622E091513471A0080ADD7 /* SenTestingKit.framework in Frameworks */,
+				FF622E0A1513471A0080ADD7 /* UIKit.framework in Frameworks */,
+				FF622E0B1513471A0080ADD7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF622DD8151347190080ADD7 = {
+			isa = PBXGroup;
+			children = (
+				FF622DED1513471A0080ADD7 /* ENTSynth */,
+				FF622E0E1513471A0080ADD7 /* ENTSynthTests */,
+				FF622DE61513471A0080ADD7 /* Frameworks */,
+				FF622DE41513471A0080ADD7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FF622DE41513471A0080ADD7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF622DE31513471A0080ADD7 /* ENTSynth.app */,
+				FF622E071513471A0080ADD7 /* ENTSynthTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF622DE61513471A0080ADD7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FF622DE71513471A0080ADD7 /* UIKit.framework */,
+				FF622DE91513471A0080ADD7 /* Foundation.framework */,
+				FF622DEB1513471A0080ADD7 /* CoreGraphics.framework */,
+				FF622E081513471A0080ADD7 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF622DED1513471A0080ADD7 /* ENTSynth */ = {
+			isa = PBXGroup;
+			children = (
+				FF622DF61513471A0080ADD7 /* ENTAppDelegate.h */,
+				FF622DF71513471A0080ADD7 /* ENTAppDelegate.m */,
+				FF622DF91513471A0080ADD7 /* ENTViewController.h */,
+				FF622DFA1513471A0080ADD7 /* ENTViewController.m */,
+				FF622DFC1513471A0080ADD7 /* ENTViewController_iPhone.xib */,
+				FF622DFF1513471A0080ADD7 /* ENTViewController_iPad.xib */,
+				FF622DEE1513471A0080ADD7 /* Supporting Files */,
+			);
+			path = ENTSynth;
+			sourceTree = "<group>";
+		};
+		FF622DEE1513471A0080ADD7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FF622DEF1513471A0080ADD7 /* ENTSynth-Info.plist */,
+				FF622DF01513471A0080ADD7 /* InfoPlist.strings */,
+				FF622DF31513471A0080ADD7 /* main.m */,
+				FF622DF51513471A0080ADD7 /* ENTSynth-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FF622E0E1513471A0080ADD7 /* ENTSynthTests */ = {
+			isa = PBXGroup;
+			children = (
+				FF622E141513471A0080ADD7 /* ENTSynthTests.h */,
+				FF622E151513471A0080ADD7 /* ENTSynthTests.m */,
+				FF622E0F1513471A0080ADD7 /* Supporting Files */,
+			);
+			path = ENTSynthTests;
+			sourceTree = "<group>";
+		};
+		FF622E0F1513471A0080ADD7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FF622E101513471A0080ADD7 /* ENTSynthTests-Info.plist */,
+				FF622E111513471A0080ADD7 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF622DE21513471A0080ADD7 /* ENTSynth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF622E191513471A0080ADD7 /* Build configuration list for PBXNativeTarget "ENTSynth" */;
+			buildPhases = (
+				FF622DDF1513471A0080ADD7 /* Sources */,
+				FF622DE01513471A0080ADD7 /* Frameworks */,
+				FF622DE11513471A0080ADD7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ENTSynth;
+			productName = ENTSynth;
+			productReference = FF622DE31513471A0080ADD7 /* ENTSynth.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FF622E061513471A0080ADD7 /* ENTSynthTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF622E1C1513471A0080ADD7 /* Build configuration list for PBXNativeTarget "ENTSynthTests" */;
+			buildPhases = (
+				FF622E021513471A0080ADD7 /* Sources */,
+				FF622E031513471A0080ADD7 /* Frameworks */,
+				FF622E041513471A0080ADD7 /* Resources */,
+				FF622E051513471A0080ADD7 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF622E0D1513471A0080ADD7 /* PBXTargetDependency */,
+			);
+			name = ENTSynthTests;
+			productName = ENTSynthTests;
+			productReference = FF622E071513471A0080ADD7 /* ENTSynthTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF622DDA151347190080ADD7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ENT;
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = WIT;
+			};
+			buildConfigurationList = FF622DDD151347190080ADD7 /* Build configuration list for PBXProject "ENTSynth" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FF622DD8151347190080ADD7;
+			productRefGroup = FF622DE41513471A0080ADD7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF622DE21513471A0080ADD7 /* ENTSynth */,
+				FF622E061513471A0080ADD7 /* ENTSynthTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF622DE11513471A0080ADD7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF622DF21513471A0080ADD7 /* InfoPlist.strings in Resources */,
+				FF622DFE1513471A0080ADD7 /* ENTViewController_iPhone.xib in Resources */,
+				FF622E011513471A0080ADD7 /* ENTViewController_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF622E041513471A0080ADD7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF622E131513471A0080ADD7 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FF622E051513471A0080ADD7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF622DDF1513471A0080ADD7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF622DF41513471A0080ADD7 /* main.m in Sources */,
+				FF622DF81513471A0080ADD7 /* ENTAppDelegate.m in Sources */,
+				FF622DFB1513471A0080ADD7 /* ENTViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF622E021513471A0080ADD7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF622E161513471A0080ADD7 /* ENTSynthTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FF622E0D1513471A0080ADD7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF622DE21513471A0080ADD7 /* ENTSynth */;
+			targetProxy = FF622E0C1513471A0080ADD7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FF622DF01513471A0080ADD7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF622DF11513471A0080ADD7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FF622DFC1513471A0080ADD7 /* ENTViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF622DFD1513471A0080ADD7 /* en */,
+			);
+			name = ENTViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		FF622DFF1513471A0080ADD7 /* ENTViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF622E001513471A0080ADD7 /* en */,
+			);
+			name = ENTViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+		FF622E111513471A0080ADD7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF622E121513471A0080ADD7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF622E171513471A0080ADD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF622E181513471A0080ADD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF622E1A1513471A0080ADD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ENTSynth/ENTSynth-Prefix.pch";
+				INFOPLIST_FILE = "ENTSynth/ENTSynth-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FF622E1B1513471A0080ADD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ENTSynth/ENTSynth-Prefix.pch";
+				INFOPLIST_FILE = "ENTSynth/ENTSynth-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		FF622E1D1513471A0080ADD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ENTSynth.app/ENTSynth";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ENTSynth/ENTSynth-Prefix.pch";
+				INFOPLIST_FILE = "ENTSynthTests/ENTSynthTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		FF622E1E1513471A0080ADD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ENTSynth.app/ENTSynth";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ENTSynth/ENTSynth-Prefix.pch";
+				INFOPLIST_FILE = "ENTSynthTests/ENTSynthTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF622DDD151347190080ADD7 /* Build configuration list for PBXProject "ENTSynth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF622E171513471A0080ADD7 /* Debug */,
+				FF622E181513471A0080ADD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF622E191513471A0080ADD7 /* Build configuration list for PBXNativeTarget "ENTSynth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF622E1A1513471A0080ADD7 /* Debug */,
+				FF622E1B1513471A0080ADD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FF622E1C1513471A0080ADD7 /* Build configuration list for PBXNativeTarget "ENTSynthTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF622E1D1513471A0080ADD7 /* Debug */,
+				FF622E1E1513471A0080ADD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF622DDA151347190080ADD7 /* Project object */;
+}
