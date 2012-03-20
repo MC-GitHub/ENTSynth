@@ -7,7 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PdDispatcher.h"
+#import "ENTInputView.h"
 
 @interface ENTViewController : UIViewController
+{
+    PdDispatcher *dispatcher;
+    void *patch;
+}
+
+-(void) playNote:(int)n;
+-(void) updateNote:(int)n;
+
+-(IBAction) playE:(id)sender;
 
 @end

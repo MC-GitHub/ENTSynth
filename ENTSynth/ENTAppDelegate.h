@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PdAudioController.h"
 
 @class ENTViewController;
 
@@ -15,5 +16,10 @@
 @property (strong, nonatomic) UIWindow *window;
 
 @property (strong, nonatomic) ENTViewController *viewController;
+
+@property (strong, nonatomic, readonly) PdAudioController *audioController;
+
+- (void) playNote:(int) note;
+- (void) updateNote:(int) note;
 
 @end

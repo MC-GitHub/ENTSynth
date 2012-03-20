@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF15F83E1513EC0B00447F32 /* ENTInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF15F83D1513EC0B00447F32 /* ENTInputView.m */; };
+		FF15F8441513F01600447F32 /* Particles_fire.png in Resources */ = {isa = PBXBuildFile; fileRef = FF15F8431513F01600447F32 /* Particles_fire.png */; };
+		FF15F8461513F04B00447F32 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF15F8451513F04B00447F32 /* QuartzCore.framework */; };
 		FF622DE81513471A0080ADD7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF622DE71513471A0080ADD7 /* UIKit.framework */; };
 		FF622DEA1513471A0080ADD7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF622DE91513471A0080ADD7 /* Foundation.framework */; };
 		FF622DEC1513471A0080ADD7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF622DEB1513471A0080ADD7 /* CoreGraphics.framework */; };
@@ -21,6 +24,10 @@
 		FF622E0B1513471A0080ADD7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF622DE91513471A0080ADD7 /* Foundation.framework */; };
 		FF622E131513471A0080ADD7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FF622E111513471A0080ADD7 /* InfoPlist.strings */; };
 		FF622E161513471A0080ADD7 /* ENTSynthTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF622E151513471A0080ADD7 /* ENTSynthTests.m */; };
+		FF622E28151349330080ADD7 /* libpd-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FF622E27151348290080ADD7 /* libpd-ios.a */; };
+		FF622E2A1513493A0080ADD7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF622E291513493A0080ADD7 /* AudioToolbox.framework */; };
+		FF622E2C151349420080ADD7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF622E2B151349420080ADD7 /* AVFoundation.framework */; };
+		FF622E2F151349CA0080ADD7 /* simple_entsynth_patch.pd in Resources */ = {isa = PBXBuildFile; fileRef = FF622E2E151349CA0080ADD7 /* simple_entsynth_patch.pd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,29 +38,44 @@
 			remoteGlobalIDString = FF622DE21513471A0080ADD7;
 			remoteInfo = ENTSynth;
 		};
+		FF622E26151348290080ADD7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF622E1F151348280080ADD7 /* libpd.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = "libpd-ios";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FF15F83C1513EC0B00447F32 /* ENTInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENTInputView.h; sourceTree = "<group>"; };
+		FF15F83D1513EC0B00447F32 /* ENTInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENTInputView.m; sourceTree = "<group>"; };
+		FF15F8431513F01600447F32 /* Particles_fire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Particles_fire.png; sourceTree = "<group>"; };
+		FF15F8451513F04B00447F32 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		FF622DE31513471A0080ADD7 /* ENTSynth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ENTSynth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF622DE71513471A0080ADD7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FF622DE91513471A0080ADD7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FF622DEB1513471A0080ADD7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		FF622DEF1513471A0080ADD7 /* ENTSynth-Info.plist */ = {isa = PBXFileReference; path = "ENTSynth-Info.plist"; sourceTree = "<group>"; };
+		FF622DEF1513471A0080ADD7 /* ENTSynth-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ENTSynth-Info.plist"; sourceTree = "<group>"; };
 		FF622DF11513471A0080ADD7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FF622DF31513471A0080ADD7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		FF622DF51513471A0080ADD7 /* ENTSynth-Prefix.pch */ = {isa = PBXFileReference; path = "ENTSynth-Prefix.pch"; sourceTree = "<group>"; };
-		FF622DF61513471A0080ADD7 /* ENTAppDelegate.h */ = {isa = PBXFileReference; path = ENTAppDelegate.h; sourceTree = "<group>"; };
+		FF622DF51513471A0080ADD7 /* ENTSynth-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ENTSynth-Prefix.pch"; sourceTree = "<group>"; };
+		FF622DF61513471A0080ADD7 /* ENTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ENTAppDelegate.h; sourceTree = "<group>"; };
 		FF622DF71513471A0080ADD7 /* ENTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ENTAppDelegate.m; sourceTree = "<group>"; };
-		FF622DF91513471A0080ADD7 /* ENTViewController.h */ = {isa = PBXFileReference; path = ENTViewController.h; sourceTree = "<group>"; };
+		FF622DF91513471A0080ADD7 /* ENTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ENTViewController.h; sourceTree = "<group>"; };
 		FF622DFA1513471A0080ADD7 /* ENTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ENTViewController.m; sourceTree = "<group>"; };
 		FF622DFD1513471A0080ADD7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ENTViewController_iPhone.xib; sourceTree = "<group>"; };
 		FF622E001513471A0080ADD7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ENTViewController_iPad.xib; sourceTree = "<group>"; };
 		FF622E071513471A0080ADD7 /* ENTSynthTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ENTSynthTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF622E081513471A0080ADD7 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		FF622E101513471A0080ADD7 /* ENTSynthTests-Info.plist */ = {isa = PBXFileReference; path = "ENTSynthTests-Info.plist"; sourceTree = "<group>"; };
+		FF622E101513471A0080ADD7 /* ENTSynthTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ENTSynthTests-Info.plist"; sourceTree = "<group>"; };
 		FF622E121513471A0080ADD7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		FF622E141513471A0080ADD7 /* ENTSynthTests.h */ = {isa = PBXFileReference; path = ENTSynthTests.h; sourceTree = "<group>"; };
+		FF622E141513471A0080ADD7 /* ENTSynthTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ENTSynthTests.h; sourceTree = "<group>"; };
 		FF622E151513471A0080ADD7 /* ENTSynthTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ENTSynthTests.m; sourceTree = "<group>"; };
+		FF622E1F151348280080ADD7 /* libpd.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = libpd.xcodeproj; path = libpd/libpd.xcodeproj; sourceTree = "<group>"; };
+		FF622E291513493A0080ADD7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		FF622E2B151349420080ADD7 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		FF622E2E151349CA0080ADD7 /* simple_entsynth_patch.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = simple_entsynth_patch.pd; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +83,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF15F8461513F04B00447F32 /* QuartzCore.framework in Frameworks */,
+				FF622E2C151349420080ADD7 /* AVFoundation.framework in Frameworks */,
+				FF622E2A1513493A0080ADD7 /* AudioToolbox.framework in Frameworks */,
+				FF622E28151349330080ADD7 /* libpd-ios.a in Frameworks */,
 				FF622DE81513471A0080ADD7 /* UIKit.framework in Frameworks */,
 				FF622DEA1513471A0080ADD7 /* Foundation.framework in Frameworks */,
 				FF622DEC1513471A0080ADD7 /* CoreGraphics.framework in Frameworks */,
@@ -85,6 +111,7 @@
 			children = (
 				FF622DED1513471A0080ADD7 /* ENTSynth */,
 				FF622E0E1513471A0080ADD7 /* ENTSynthTests */,
+				FF622E30151349D80080ADD7 /* Resources */,
 				FF622DE61513471A0080ADD7 /* Frameworks */,
 				FF622DE41513471A0080ADD7 /* Products */,
 			);
@@ -102,6 +129,10 @@
 		FF622DE61513471A0080ADD7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FF622E1F151348280080ADD7 /* libpd.xcodeproj */,
+				FF15F8451513F04B00447F32 /* QuartzCore.framework */,
+				FF622E2B151349420080ADD7 /* AVFoundation.framework */,
+				FF622E291513493A0080ADD7 /* AudioToolbox.framework */,
 				FF622DE71513471A0080ADD7 /* UIKit.framework */,
 				FF622DE91513471A0080ADD7 /* Foundation.framework */,
 				FF622DEB1513471A0080ADD7 /* CoreGraphics.framework */,
@@ -113,6 +144,8 @@
 		FF622DED1513471A0080ADD7 /* ENTSynth */ = {
 			isa = PBXGroup;
 			children = (
+				FF15F83C1513EC0B00447F32 /* ENTInputView.h */,
+				FF15F83D1513EC0B00447F32 /* ENTInputView.m */,
 				FF622DF61513471A0080ADD7 /* ENTAppDelegate.h */,
 				FF622DF71513471A0080ADD7 /* ENTAppDelegate.m */,
 				FF622DF91513471A0080ADD7 /* ENTViewController.h */,
@@ -152,6 +185,23 @@
 				FF622E111513471A0080ADD7 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FF622E20151348280080ADD7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF622E27151348290080ADD7 /* libpd-ios.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF622E30151349D80080ADD7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FF15F8431513F01600447F32 /* Particles_fire.png */,
+				FF622E2E151349CA0080ADD7 /* simple_entsynth_patch.pd */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +263,12 @@
 			mainGroup = FF622DD8151347190080ADD7;
 			productRefGroup = FF622DE41513471A0080ADD7 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = FF622E20151348280080ADD7 /* Products */;
+					ProjectRef = FF622E1F151348280080ADD7 /* libpd.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				FF622DE21513471A0080ADD7 /* ENTSynth */,
@@ -220,6 +276,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		FF622E27151348290080ADD7 /* libpd-ios.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libpd-ios.a";
+			remoteRef = FF622E26151348290080ADD7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		FF622DE11513471A0080ADD7 /* Resources */ = {
@@ -229,6 +295,8 @@
 				FF622DF21513471A0080ADD7 /* InfoPlist.strings in Resources */,
 				FF622DFE1513471A0080ADD7 /* ENTViewController_iPhone.xib in Resources */,
 				FF622E011513471A0080ADD7 /* ENTViewController_iPad.xib in Resources */,
+				FF622E2F151349CA0080ADD7 /* simple_entsynth_patch.pd in Resources */,
+				FF15F8441513F01600447F32 /* Particles_fire.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +334,7 @@
 				FF622DF41513471A0080ADD7 /* main.m in Sources */,
 				FF622DF81513471A0080ADD7 /* ENTAppDelegate.m in Sources */,
 				FF622DFB1513471A0080ADD7 /* ENTViewController.m in Sources */,
+				FF15F83E1513EC0B00447F32 /* ENTInputView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,6 +446,7 @@
 				GCC_PREFIX_HEADER = "ENTSynth/ENTSynth-Prefix.pch";
 				INFOPLIST_FILE = "ENTSynth/ENTSynth-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/libpd/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -388,6 +458,7 @@
 				GCC_PREFIX_HEADER = "ENTSynth/ENTSynth-Prefix.pch";
 				INFOPLIST_FILE = "ENTSynth/ENTSynth-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/libpd/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -445,6 +516,7 @@
 				FF622E1B1513471A0080ADD7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FF622E1C1513471A0080ADD7 /* Build configuration list for PBXNativeTarget "ENTSynthTests" */ = {
 			isa = XCConfigurationList;
@@ -453,6 +525,7 @@
 				FF622E1E1513471A0080ADD7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
