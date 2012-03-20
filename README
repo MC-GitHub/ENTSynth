@@ -1,6 +1,6 @@
 ENTSynth (Extremely Noisy Thing) intends to be a ongoing project for the Audio Technology students of BSc (Hons) Entertainment Systems at Waterford Institute of Technology.
 
-Initally, the plan is to develop a simple touch synthesizer for iOS devices, using libpd as the sound engine.
+Initally, the plan is to develop a simple touch synthesizer for iOS devices, using libpd as the sound engine. After that, we will add functionality to it each semester.
 
 At present, the team consists of 
 Rob O'Connor (Supervisor) 
