@@ -12,13 +12,14 @@
 
 @interface ENTViewController : UIViewController
 {
+    /* Putting the dispatcher in the ViewController as per the libpd tutorial.
+     Perhaps it'd be a better suited in the AppDelegate? Or maybe not? */
+     
     PdDispatcher *dispatcher;
     void *patch;
 }
 
 -(void) playNote:(int)n;
 -(void) updateNote:(int)n;
-
--(IBAction) playE:(id)sender;
 
 @end

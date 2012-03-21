@@ -21,8 +21,24 @@
     return [CAEmitterLayer class];
 }
 
+
+- (id)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    
+    NSLog(@"*** Initialising appDelegate ***");
+    
+    if (self) {
+        
+    }
+    
+    return self;
+}
+
 -(void)awakeFromNib
 {
+    /* Setting up the fire animation properties */
+    
     //set ref to the layer
     fireEmitter = (CAEmitterLayer*)self.layer; //2
     
@@ -37,8 +53,8 @@
     fire.birthRate = 100;
     fire.lifetime = 1.0;
     fire.lifetimeRange = 0.5;
-    fire.color = [[UIColor colorWithRed:0.8 green:0.4 blue:0.2 alpha:0.1] 
-                  CGColor];
+    fire.color = [[UIColor colorWithRed:0.2 green:0.5 blue:0.3 alpha:0.1] CGColor];
+    
     fire.contents = (id)[[UIImage imageNamed:@"Particles_fire.png"] CGImage];
     fire.velocity = 10;
     fire.velocityRange = 20;
@@ -55,20 +71,24 @@
 }
 
 
-- (id)initWithFrame:(CGRect)frame
+/* Tells the CAEmitterLayer to draw fire from where a touch is detected */
+-(void)setEmitterPositionFromTouch: (UITouch*)t
 {
-    self = [super initWithFrame:frame];
-    
-    NSLog(@"*** Initialising appDelegate ***");
-    
-    if (self) {
-        
-    }
-    
-    return self;
+    //change the emitter's position
+    fireEmitter.emitterPosition = [t locationInView:self];
 }
 
+/* Turns the fire on and off */
+-(void)setIsEmitting:(BOOL)isEmitting
+{
+    //turn on/off the emitting of particles
+    [fireEmitter setValue:[NSNumber numberWithInt:isEmitting?200:0] 
+               forKeyPath:@"emitterCells.fire.birthRate"];
+}
 
+/* Determines the touch position as a MIDI note number between 36 and 60 (C2 - C4). 
+ Far left is C2, far right is C4.
+ This is a bit of a hack. */
 - (int) xCoordinateAsMidiNote:(CGPoint) pt
 {
     // Width is 0 - 480
@@ -76,61 +96,56 @@
 
     int p = (pt.x/480) * 100; // gets percentage value
     
-    int n = (0.24 * p) + 36;
+    int n = (0.24 * p) + 36; // get percentage as a note value in 0 - 24 range, then add 36 to put in our scale
     
     return n;
 }
 
+#pragma mark - Touch Lifecycle Methods
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    NSLog(@"Touches begin");
+    
+    /* Do the drawing */
+    [self setEmitterPositionFromTouch: [touches anyObject]];
+    [self setIsEmitting:YES];
+    
+    /* Work out where the touch is happening, get the MIDI value and send it to the AppDelegate as a new playNote message. Remember - playNote will initiate a trigger. updateNote will not.*/
+    CGPoint pt = [[touches anyObject] locationInView: self];
+    NSLog(@"x = %f, y = %f", pt.x, pt.y);
+    
+    int n = [self xCoordinateAsMidiNote:pt];
+    ENTAppDelegate *appDelegate = (ENTAppDelegate *)[[UIApplication sharedApplication] delegate];
+    [appDelegate playNote:n];
+}
+
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
+    /* Do the drawing */
+    [self setEmitterPositionFromTouch: [touches anyObject]];
+    
+    /* Work out where the touch is happening, get the MIDI value and update the note in the AppDelegate (which will then update the displatcher) */
     CGPoint pt = [[touches anyObject] locationInView: self];
     int n = [self xCoordinateAsMidiNote:pt];
     
     ENTAppDelegate *appDelegate = (ENTAppDelegate *)[[UIApplication sharedApplication] delegate];
     [appDelegate updateNote:n];
-    
-    [self setEmitterPositionFromTouch: [touches anyObject]];
 }
 
-- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-    NSLog(@"Touches begin");
-    
-    
-    [self setEmitterPositionFromTouch: [touches anyObject]];
-    [self setIsEmitting:YES];
-    
-    CGPoint pt = [[touches anyObject] locationInView: self];
-    NSLog(@"x = %f, y = %f", pt.x, pt.y);
-    
-    int n = [self xCoordinateAsMidiNote:pt];
-    
-    ENTAppDelegate *appDelegate = (ENTAppDelegate *)[[UIApplication sharedApplication] delegate];
-    
-    [appDelegate playNote:n];
-}
 
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
+    /* Stop drawing */
     [self setIsEmitting:NO];
+    
+    /* Note we're not handling an audio here, because the patch I've "designed" does not sustain.
+     May need to look at this in a later version */
 }
 
 - (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event {
+    /* In the event of a touchesCancelled, send a 0 note to the audio dispatcher and turn off the fire.
+     A touch could be cancelled by something like an incoming phone call */
     ENTAppDelegate *appDelegate = (ENTAppDelegate *)[[UIApplication sharedApplication] delegate];
     [appDelegate updateNote:0];
     [self setIsEmitting:NO];
-}
-
-
-
--(void)setEmitterPositionFromTouch: (UITouch*)t
-{
-    //change the emitter's position
-    fireEmitter.emitterPosition = [t locationInView:self];
-}
-
--(void)setIsEmitting:(BOOL)isEmitting
-{
-    //turn on/off the emitting of particles
-    [fireEmitter setValue:[NSNumber numberWithInt:isEmitting?200:0] 
-               forKeyPath:@"emitterCells.fire.birthRate"];
 }
 
 

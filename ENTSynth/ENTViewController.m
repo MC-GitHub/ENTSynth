@@ -14,6 +14,7 @@
 {
     [super viewDidLoad];
 	
+    /* Initializing the dispatcher with the patch */
     dispatcher = [[PdDispatcher alloc] init];
     [PdBase setDelegate:dispatcher];
     patch = [PdBase openFile:@"simple_entsynth_patch.pd"
@@ -40,6 +41,7 @@
     }
 }
 
+/* Sends a MIDI note and a trigger to our dispatcher */
 -(void) playNote:(int)n 
 {
     NSLog(@"Playing note %d", n);
@@ -47,15 +49,10 @@
     [PdBase sendBangToReceiver:@"trigger"];
 }
 
+/* Updates the MIDI note information in the dispatcher */
 -(void) updateNote:(int)n 
 {
     [PdBase sendFloat:n toReceiver:@"midinote"];
 }
-
--(IBAction)playE:(id)sender {
-    NSLog(@"Playing E");
-    [self playNote:40];
-}
-
 
 @end

@@ -9,11 +9,13 @@
 #import <UIKit/UIKit.h>
 #import "ENTAppDelegate.h"
 
-//@class ENTAppDelegate;
 
 @interface ENTInputView : UIView
 
+/* Tells the CAEmitterLayer to draw fire from where a touch is detected*/
 -(void)setEmitterPositionFromTouch: (UITouch*)t;
+
+/* Turns the fire on and off */
 -(void)setIsEmitting:(BOOL)isEmitting;
 
 @end
