@@ -9,3 +9,9 @@ Morgan Carparelli
 Michael O'Reilly
 
 We intend to release a stable version of ENTSynth by June 2012 (or thereabouts).
+
+21/03/2012 - ROC
+Updated source code to include useful comments.
+
+20/03/2012 - ROC
+Added initial Xcode project with simple PD patch
