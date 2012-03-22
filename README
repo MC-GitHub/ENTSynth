@@ -10,6 +10,9 @@ Michael O'Reilly
 
 We intend to release a stable version of ENTSynth by June 2012 (or thereabouts).
 
+22/03/2012 - ROC
+Moved ENTSynth from roboconnor personal repository to EntSysCoders organisation repo
+
 22/03/2912 - ROC
 Added libpd as a git submodule
 
