@@ -1,0 +1,38 @@
+Set up a github account and your keys
+Add to the EntSysCoders organization
+
+
+Fork the ENTSynth repository
+
+clone the repository
+
+git clone git@github.com:EntSysCoders/ENTSynth.git
+
+libpd will be empty
+
+git submodule init
+git submodule update
+
+Try running the project
+
+Configure remotes
+git remote add upstream git://github.com/EntSysCoders/ENTSynth.git
+git fetch upstream
+
+OK
+
+Make a change in Xcode
+
+Source Control menu
+
+Add to repository 
+git push origin master
+
+Update upstream (original repo)
+git fetch upstream
+git merge upstream/master
+
+
+
+
+
